@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dlog.views.loginView"
+             Title="loginView">
+
+    <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+
+        <StackLayout >
+            <StackLayout HorizontalOptions="Center" Margin="10">
+                <Label Text="Welcome" FontSize="25" TextColor="Black"/>
+            </StackLayout>
+        </StackLayout>
+        <!-- Campo de entrada para el usuaario -->
+        <StackLayout Margin="10">
+            <Label Text="Usuario" FontSize="Medium" TextColor="Red"/>
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BorderColor="Gray" WidthRequest="300">
+                <Entry Placeholder="Ingresa el usuario" x:Name="UsernameEntry" BackgroundColor="White" PlaceholderColor="Blue" FontSize="13"
+                       Margin="5"/>
+            </Frame>
+        </StackLayout>
+        <!-- Campo de entrada para contraseña -->
+        <StackLayout Margin="10">
+            <Label Text="Contraseña" FontSize="Medium" TextColor="Red"/>
+            <Frame CornerRadius="10" Padding="0" HasShadow="False" BorderColor="Gray" 
+                   WidthRequest="300">
+                <Entry Placeholder="Ingresar contraseña" IsPassword="True" x:Name="PasswordEntry" BackgroundColor="white" PlaceholderColor="Blue" FontSize="13" Margin="5"/>
+            </Frame>
+           
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center" Margin="20.25">
+            <Button Text="Empezar" HorizontalOptions="Center" BackgroundColor="Red" HeightRequest="50" WidthRequest="200"/>
+        </StackLayout>
+
+
+    </StackLayout>
+
+
+
+
+</ContentPage>
